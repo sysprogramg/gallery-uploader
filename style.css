@@ -1,0 +1,220 @@
+.btnPink {
+	color: white;
+	background-color: #fe65b7;
+	border-color: #fe65b7;
+}
+
+.btnCyan {
+	color: white;
+	background-color: #4ec5c1;
+	border-color: #4ec5c1;
+}
+
+.autor {
+	width: 140px;
+	height: 140px;
+	padding: 5px;
+	cursor: pointer;
+	border: none;
+}
+
+.autor-invalid {
+	border: solid 2px red;
+}
+.autor-sel {
+	width: 180px;
+	height: 180px;
+	border: solid 2px #d48cf8;
+	padding: 5px;
+}
+
+.invalid {
+	border: solid 2px red;
+}
+
+/* Spinner */
+.cover {
+	background: url("http://www.broadwaybalancesamerica.com/images/ajax-loader.gif")
+		no-repeat scroll center center #fff;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	opacity: 0.8;
+	z-index: 999;
+}
+/* Spinner */
+
+/* Previewgallery */
+.itemGallery {
+	position: relative;
+	width: 130px;
+	height: 130px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#wrapperGallery img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.itemGallery:hover img {
+	box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 10px;
+	border: solid 3px #fe65b7;
+	opacity: 0.4;
+}
+
+.itemGallery:hover > div {
+	opacity: 1;
+}
+
+.itemGallery > div {
+	display: inline-flex;
+	position: absolute;
+	color: #808080;
+	left: 28%;
+	top: 40%;
+	font-size: x-large;
+	opacity: 0;
+	transition: opacity 0.35s ease;
+}
+
+.itemGallery > div span {
+	margin: 5px;
+}
+
+.itemGallery img.drop {
+	border: solid 3px skyblue;
+}
+
+#previewFile > div {
+	position: relative;
+	max-width: 770px;
+	max-height: 850px;
+}
+
+#imagepreview,
+#videopreview {
+	max-width: 100%;
+	max-height: 100%;
+	border: solid 2px #fe65b7;
+	border-radius: 10px;
+	transition: opacity 1s;
+}
+
+#previewFile span:hover + img,
+#previewFile span:hover + img + video {
+	opacity: 0.6;
+}
+
+#previewFile span {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	font-size: 40px;
+	opacity: 0;
+	z-index: 2;
+	text-align: center;
+	transition: opacity 1s;
+}
+
+#previewFile span i {
+	cursor: pointer;
+	position: relative;
+	top: 50px;
+	color: #808080;
+}
+
+#previewFile span:hover {
+	opacity: 1;
+}
+/* Previewgallery */
+
+#step h6 {
+	color: #fe65b7;
+	font-family: "Podkova";
+	font-size: x-large;
+}
+
+.card img,
+.card video {
+	max-width: 100%;
+	max-height: 300px;
+	border-radius: 10px;
+	border: solid 2px #fe65b7;
+}
+
+/* Custom Input File */
+.custom-file {
+	position: relative;
+	display: inline-block;
+	height: 60px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.custom-file input[type="file"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 2px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.custom-file label {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0.5rem;
+	cursor: pointer;
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s;
+	border-color: #ccc;
+	color: #ccc;
+	border-style: dashed;
+}
+
+.custom-file label span {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 1.3rem;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.custom-file label.error {
+	border-color: #ff0000;
+	border-style: solid;
+}
+
+.custom-file label.drop {
+	border-color: #87ceeb;
+	border-style: solid;
+}
+
+.custom-file label i {
+	color: #ccc;
+	margin-right: 10px;
+}
+
+.custom-file label.drop i {
+	color: #87ceeb;
+}
+/* Custom Input File */
